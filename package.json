@@ -1,11 +1,16 @@
 {
 	"dependencies": {
+		"@types/bcrypt": "^2.0.0",
+		"@types/body-parser": "^1.17.0",
 		"@types/express": "^4.11.1",
+		"bcrypt": "^2.0.1",
+		"body-parser": "^1.18.2",
 		"express": "^4.16.3",
 		"typescript": "^2.8.3"
 	},
 	"scripts": {
 		"build": "./node_modules/.bin/tsc -p .",
-		"watch": "./node_modules/.bin/tsc -p . -w"
+		"watch": "./node_modules/.bin/tsc -p . -w",
+		"create-database": "mysql -u root -p < schema.sql"
 	}
 }
